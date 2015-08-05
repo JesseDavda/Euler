@@ -4,13 +4,12 @@ using namespace std;
 
 int main() {
     
-    int count;
+    long unsigned int sum;
     
     for(int i = 1; i < 1000; i++) {
-        if(i % 3 == 0 || i % 5 == 0) {
-            count++;   
-        }
+        if(i % 3 == 0 || i % 5 == 0)
+            sum += i;   
     }
     
-    cout << count << endl;
+    cout << sum << endl;
 }
